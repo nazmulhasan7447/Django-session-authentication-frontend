@@ -86,7 +86,7 @@ class App extends React.Component {
 
   login = (event) => {
     event.preventDefault();
-    fetch("http://localhost:8000/api/login/", {
+    fetch(`${BASE_URL}/api/login/`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
